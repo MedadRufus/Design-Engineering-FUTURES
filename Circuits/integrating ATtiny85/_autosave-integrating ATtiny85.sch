@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:integrating ATtiny85-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_Microchip_ATtiny:ATtiny85V-10SU U1
-U 1 1 5E46DE9B
-P 2400 3100
-F 0 "U1" H 1870 3146 50  0000 R CNN
-F 1 "ATtiny85V-10SU" H 1870 3055 50  0000 R CNN
-F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 2400 3100 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2400 3100 50  0001 C CNN
-	1    2400 3100
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5E46E39F
@@ -56,7 +46,7 @@ U 1 1 5E472E53
 P 3850 2900
 F 0 "J2" H 3950 2900 50  0000 L CNN
 F 1 "Conn_01x01" H 4100 2900 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 3850 2900 50  0001 C CNN
+F 2 "~" H 3850 2900 50  0001 C CNN
 F 3 "~" H 3850 2900 50  0001 C CNN
 	1    3850 2900
 	1    0    0    -1  
@@ -69,7 +59,7 @@ U 1 1 5E471C87
 P 3850 2800
 F 0 "J1" H 3950 2800 50  0000 L CNN
 F 1 "Conn_01x01" H 4100 2800 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 3850 2800 50  0001 C CNN
+F 2 "~" H 3850 2800 50  0001 C CNN
 F 3 "~" H 3850 2800 50  0001 C CNN
 	1    3850 2800
 	1    0    0    -1  
@@ -84,7 +74,7 @@ U 1 1 5E476AF3
 P 3850 3000
 F 0 "J3" H 3950 3000 50  0000 L CNN
 F 1 "Conn_01x01" H 4100 3000 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 3850 3000 50  0001 C CNN
+F 2 "~" H 3850 3000 50  0001 C CNN
 F 3 "~" H 3850 3000 50  0001 C CNN
 	1    3850 3000
 	1    0    0    -1  
@@ -97,7 +87,7 @@ U 1 1 5E47A056
 P 3850 3300
 F 0 "J6" H 3950 3300 50  0000 L CNN
 F 1 "Conn_01x01" H 4100 3300 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 3850 3300 50  0001 C CNN
+F 2 "~" H 3850 3300 50  0001 C CNN
 F 3 "~" H 3850 3300 50  0001 C CNN
 	1    3850 3300
 	1    0    0    -1  
@@ -110,7 +100,7 @@ U 1 1 5E47A061
 P 3850 3200
 F 0 "J5" H 3950 3200 50  0000 L CNN
 F 1 "Conn_01x01" H 4100 3200 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 3850 3200 50  0001 C CNN
+F 2 "~" H 3850 3200 50  0001 C CNN
 F 3 "~" H 3850 3200 50  0001 C CNN
 	1    3850 3200
 	1    0    0    -1  
@@ -223,4 +213,15 @@ Wire Wire Line
 Connection ~ 2400 3850
 Wire Wire Line
 	2400 3850 2400 3700
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U1
+U 1 1 5E53E355
+P 2400 3100
+F 0 "U1" H 1871 3146 50  0000 R CNN
+F 1 "ATtiny85-20PU" H 1871 3055 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2400 3100 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2400 3100 50  0001 C CNN
+	1    2400 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
