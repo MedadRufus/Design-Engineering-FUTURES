@@ -22,18 +22,26 @@
   http://www.arduino.cc/en/Tutorial/Blink
   */
 
-  int blink_pin = 3;
+  int blink_pin_up = 3;
+  int blink_pin_down = 5;
   
   // the setup function runs once when you press reset or power the board
   void setup() {
     // initialize digital pin LED_BUILTIN as an output.
-    pinMode(blink_pin, OUTPUT);
+    pinMode(blink_pin_up, OUTPUT);
+    pinMode(blink_pin_down, OUTPUT);
+    pinMode(LED_BUILTIN, OUTPUT);
   }
   
   // the loop function runs over and over again forever
   void loop() {
-    digitalWrite(blink_pin, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(1000);                       // wait for a second
-  digitalWrite(blink_pin, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
+    digitalWrite(blink_pin_down, LOW);
+    digitalWrite(blink_pin_up, HIGH); 
+    digitalWrite(LED_BUILTIN, HIGH);// turn the LED on (HIGH is the voltage level)
+    delay(5000);                       // wait for a second
+    digitalWrite(blink_pin_down, HIGH);
+    digitalWrite(blink_pin_up, LOW);// turn the LED off by making the voltage LOW
+    digitalWrite(LED_BUILTIN, LOW);// turn the LED on (HIGH is the voltage level)
+
+    delay(5000);                       // wait for a second
 }
