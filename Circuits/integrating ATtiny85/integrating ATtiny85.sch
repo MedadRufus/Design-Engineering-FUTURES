@@ -40,47 +40,8 @@ F 3 "" H 2400 2000 50  0001 C CNN
 $EndComp
 Text Notes 2200 1650 0    50   ~ 0
 VCC is +5V
-$Comp
-L Connector_Generic:Conn_01x01 J2
-U 1 1 5E472E53
-P 3850 2900
-F 0 "J2" H 3950 2900 50  0000 L CNN
-F 1 "Conn_01x01" H 4100 2900 50  0000 L CNN
-F 2 "~" H 3850 2900 50  0001 C CNN
-F 3 "~" H 3850 2900 50  0001 C CNN
-	1    3850 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 2900 3650 2900
-$Comp
-L Connector_Generic:Conn_01x01 J1
-U 1 1 5E471C87
-P 3850 2800
-F 0 "J1" H 3950 2800 50  0000 L CNN
-F 1 "Conn_01x01" H 4100 2800 50  0000 L CNN
-F 2 "~" H 3850 2800 50  0001 C CNN
-F 3 "~" H 3850 2800 50  0001 C CNN
-	1    3850 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 2800 3650 2800
 Wire Wire Line
 	3000 3100 3700 3100
-$Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 5E476AF3
-P 3850 3000
-F 0 "J3" H 3950 3000 50  0000 L CNN
-F 1 "Conn_01x01" H 4100 3000 50  0000 L CNN
-F 2 "~" H 3850 3000 50  0001 C CNN
-F 3 "~" H 3850 3000 50  0001 C CNN
-	1    3850 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 3000 3650 3000
 $Comp
 L Connector_Generic:Conn_01x01 J6
 U 1 1 5E47A056
@@ -107,12 +68,6 @@ F 3 "~" H 3850 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 3200 3650 3200
-Text Notes 4750 2850 0    50   ~ 0
-Connected to ArduinoNano pin 11
-Text Notes 4750 2950 0    50   ~ 0
-Connected to ArduinoNano pin 12
-Text Notes 4750 3050 0    50   ~ 0
-Connected to ArduinoNano pin 13
 Text Notes 4750 3350 0    50   ~ 0
 Connected to ArduinoNano pin 10
 $Comp
@@ -214,14 +169,59 @@ Connection ~ 2400 3850
 Wire Wire Line
 	2400 3850 2400 3700
 $Comp
-L MCU_Microchip_ATtiny:ATtiny85-20PU U?
+L MCU_Microchip_ATtiny:ATtiny85-20PU U1
 U 1 1 5E53E355
 P 2400 3100
-F 0 "U?" H 1871 3146 50  0000 R CNN
+F 0 "U1" H 1871 3146 50  0000 R CNN
 F 1 "ATtiny85-20PU" H 1871 3055 50  0000 R CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 2400 3100 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2400 3100 50  0001 C CNN
 	1    2400 3100
+	1    0    0    -1  
+$EndComp
+Text Notes 4750 3050 0    50   ~ 0
+Connected to ArduinoNano pin 13
+Text Notes 4750 2950 0    50   ~ 0
+Connected to ArduinoNano pin 12
+Text Notes 4750 2850 0    50   ~ 0
+Connected to ArduinoNano pin 11
+Wire Wire Line
+	3000 3000 3650 3000
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 5E476AF3
+P 3850 3000
+F 0 "J3" H 3950 3000 50  0000 L CNN
+F 1 "Conn_01x01" H 4100 3000 50  0000 L CNN
+F 2 "~" H 3850 3000 50  0001 C CNN
+F 3 "~" H 3850 3000 50  0001 C CNN
+	1    3850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2800 3650 2800
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5E471C87
+P 3850 2800
+F 0 "J1" H 3950 2800 50  0000 L CNN
+F 1 "Conn_01x01" H 4100 2800 50  0000 L CNN
+F 2 "~" H 3850 2800 50  0001 C CNN
+F 3 "~" H 3850 2800 50  0001 C CNN
+	1    3850 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2900 3650 2900
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5E472E53
+P 3850 2900
+F 0 "J2" H 3950 2900 50  0000 L CNN
+F 1 "Conn_01x01" H 4100 2900 50  0000 L CNN
+F 2 "~" H 3850 2900 50  0001 C CNN
+F 3 "~" H 3850 2900 50  0001 C CNN
+	1    3850 2900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

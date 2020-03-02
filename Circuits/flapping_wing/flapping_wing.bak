@@ -1,0 +1,202 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_Array:ULN2003 U?
+U 1 1 5E5A49F0
+P 5650 3100
+F 0 "U?" H 5650 3767 50  0000 C CNN
+F 1 "ULN2003" H 5650 3676 50  0000 C CNN
+F 2 "" H 5700 2550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2003a.pdf" H 5750 2900 50  0001 C CNN
+	1    5650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 5E5A5855
+P 4350 3200
+F 0 "A?" H 4900 4500 50  0001 C CNN
+F 1 "Arduino_Nano_v3.x" H 3950 2150 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 4500 2250 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4350 2200 50  0001 C CNN
+	1    4350 3200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2200 4450 2000
+Wire Wire Line
+	4850 2900 5250 2900
+Wire Wire Line
+	4850 3000 5250 3000
+Wire Wire Line
+	4850 3100 5250 3100
+Wire Wire Line
+	5250 3200 4850 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 5E5ABB8A
+P 6850 2000
+F 0 "#PWR?" H 6850 1850 50  0001 C CNN
+F 1 "+5V" H 6865 2173 50  0000 C CNN
+F 2 "" H 6850 2000 50  0001 C CNN
+F 3 "" H 6850 2000 50  0001 C CNN
+	1    6850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E5AC120
+P 4450 2000
+F 0 "#PWR?" H 4450 1850 50  0001 C CNN
+F 1 "+5V" H 4465 2173 50  0000 C CNN
+F 2 "" H 4450 2000 50  0001 C CNN
+F 3 "" H 4450 2000 50  0001 C CNN
+	1    4450 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2700 6850 2700
+Wire Wire Line
+	6850 2700 6850 2000
+Wire Wire Line
+	6050 2900 6250 2900
+Wire Wire Line
+	6550 2900 6850 2900
+Wire Wire Line
+	6850 2900 6850 2700
+Connection ~ 6850 2700
+Wire Wire Line
+	6050 3000 6250 3000
+Wire Wire Line
+	6550 3000 6850 3000
+$Comp
+L Device:R_US R?
+U 1 1 5E5B4356
+P 6400 3000
+F 0 "R?" V 6195 3000 50  0001 C CNN
+F 1 "Flexinol" V 6286 3000 50  0001 C CNN
+F 2 "" V 6440 2990 50  0001 C CNN
+F 3 "~" H 6400 3000 50  0001 C CNN
+	1    6400 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 3100 6850 3100
+Wire Wire Line
+	6050 3200 6250 3200
+Wire Wire Line
+	6550 3200 6850 3200
+Wire Wire Line
+	6850 2900 6850 3000
+Connection ~ 6850 2900
+Connection ~ 6850 3000
+Wire Wire Line
+	6850 3000 6850 3100
+Connection ~ 6850 3100
+Wire Wire Line
+	6850 3100 6850 3200
+Wire Wire Line
+	6050 3100 6250 3100
+$Comp
+L Device:R_US R?
+U 1 1 5E5C371A
+P 6400 2900
+F 0 "R?" V 6300 3100 50  0001 C CNN
+F 1 "Flexinol" V 6286 2900 50  0000 C CNN
+F 2 "" V 6440 2890 50  0001 C CNN
+F 3 "~" H 6400 2900 50  0001 C CNN
+	1    6400 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E5C668A
+P 6400 3100
+F 0 "R?" V 6195 3100 50  0001 C CNN
+F 1 "Flexinol" V 6286 3100 50  0001 C CNN
+F 2 "" V 6440 3090 50  0001 C CNN
+F 3 "~" H 6400 3100 50  0001 C CNN
+	1    6400 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E5C6903
+P 6400 3200
+F 0 "R?" V 6195 3200 50  0001 C CNN
+F 1 "Flexinol" V 6286 3200 50  0001 C CNN
+F 2 "" V 6440 3190 50  0001 C CNN
+F 3 "~" H 6400 3200 50  0001 C CNN
+	1    6400 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E5C95E4
+P 4350 4400
+F 0 "#PWR?" H 4350 4150 50  0001 C CNN
+F 1 "GND" H 4355 4227 50  0000 C CNN
+F 2 "" H 4350 4400 50  0001 C CNN
+F 3 "" H 4350 4400 50  0001 C CNN
+	1    4350 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4200 4350 4200
+Wire Wire Line
+	4350 4400 4350 4200
+Connection ~ 4350 4200
+Wire Wire Line
+	5650 3700 5650 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5E5CA8C8
+P 5650 4400
+F 0 "#PWR?" H 5650 4150 50  0001 C CNN
+F 1 "GND" H 5655 4227 50  0000 C CNN
+F 2 "" H 5650 4400 50  0001 C CNN
+F 3 "" H 5650 4400 50  0001 C CNN
+	1    5650 4400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 3300
+NoConn ~ 5250 3400
+NoConn ~ 5250 3500
+NoConn ~ 6050 3500
+NoConn ~ 6050 3400
+NoConn ~ 6050 3300
+NoConn ~ 4850 3300
+NoConn ~ 4850 3400
+NoConn ~ 4850 3500
+NoConn ~ 4850 3600
+NoConn ~ 4850 3700
+NoConn ~ 4850 3800
+NoConn ~ 4850 3900
+NoConn ~ 3850 3900
+NoConn ~ 3850 3800
+NoConn ~ 3850 3700
+NoConn ~ 3850 3600
+NoConn ~ 3850 3500
+NoConn ~ 3850 3400
+NoConn ~ 3850 3300
+NoConn ~ 3850 3200
+NoConn ~ 3850 3000
+NoConn ~ 3850 2700
+NoConn ~ 3850 2600
+NoConn ~ 4850 2600
+NoConn ~ 4850 2700
+NoConn ~ 4850 2800
+$EndSCHEMATC
